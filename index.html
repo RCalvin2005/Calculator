@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <script src="app.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="display">
+                <div class="indicator-container">
+                    <div class="indicator" id="divide">&divide;</div>
+                    <div class="indicator" id="times">&times;</div>
+                    <div class="indicator" id="minus">&minus;</div>
+                    <div class="indicator" id="plus">&plus;</div>
+                </div>
+
+                <p id="result">0</p>
+            </div>
+            <button class="btn special" id="AC" onclick="btnPress('AC');">AC</button>
+            <button class="btn special" id="DEL" onclick="btnPress('DEL');">DEL</button>
+            <button class="btn num" onclick="btnPress('7')">7</button>
+            <button class="btn num" onclick="btnPress('8');">8</button>
+            <button class="btn num" onclick="btnPress('9');">9</button>
+            <button class="btn operator" onclick="btnPress('/');">&divide;</button>
+            <button class="btn num" onclick="btnPress('4');">4</button>
+            <button class="btn num" onclick="btnPress('5');">5</button>
+            <button class="btn num" onclick="btnPress('6');">6</button>
+            <button class="btn operator" onclick="btnPress('*');">&times;</button>
+            <button class="btn num" onclick="btnPress('1');">1</button>
+            <button class="btn num" onclick="btnPress('2');">2</button>
+            <button class="btn num" onclick="btnPress('3');">3</button>
+            <button class="btn operator" onclick="btnPress('-');">&minus;</button>
+            <button class="btn num" onclick="btnPress('0');">0</button>
+            <button class="btn num" onclick="btnPress('.');">&bull;</button>
+            <button class="btn operator" onclick="btnPress('=');">&equals;</button>
+            <button class="btn operator" onclick="btnPress('+');">&plus;</button>
+        </div>
+        <form action="https://rcalvin2005.github.io/Code-Playground-Homepage/">
+            <button id="back">Home</button>
+        </form>
+    </body>
+</html>

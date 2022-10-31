@@ -1,0 +1,140 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #222222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 24% auto auto 24%;
+    grid-template-rows: 20% auto auto auto auto auto;
+}
+
+.container > * {
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-color: black;
+}
+
+.num, .btn.num:active {
+    background-color: #EEEEEE;
+}
+
+.num:hover {
+    background-color: #CCCCCC;
+}
+
+.special, .btn.special:active {
+    background-color: #FFCBE7;
+}
+
+.special:hover {
+    background-color: #FF9DC3;
+}
+
+.operator, .btn.operator:active {
+    background-color: #A8BDFA;
+}
+
+.operator:hover {
+    background-color: #8CA2FA;
+}
+
+#display {
+    grid-column: 1 / span 4;
+    background-color: #DDDDDD;
+    margin: 10px 0px;
+    padding: 15px;
+}
+
+#result {
+    margin: 10px 10px 0 10px;
+    line-height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.indicator-container {
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.indicator {
+    background-color: #111111;
+    color: #FFFFFF;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    opacity: 0;
+}
+
+#AC {
+    grid-column: 1 / 2;
+}
+
+#DEL {
+    grid-column: 4 / 4;
+}
+
+#back {
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 300px;
+        height: 375px;
+    }
+
+    .container > * {
+        font-size: 23px;
+    }
+
+    #display {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #result {
+        line-height: 40px;
+        margin: 10px 0 0 0;
+    }
+
+    .indicator-container {
+        top: 19px;
+        height: 20px;
+        width: 125px
+    }
+
+    .indicator {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+    }
+
+}
